@@ -21,30 +21,18 @@ Write a benchmark to measure the speed of execution of all four queries from the
   4 =  [687.633752822876, 686.4669322967529, 676.0632991790771, 683.6743354797363, 686.6278648376465, 687.2365474700928, 683.1533908843994, 680.9906959533691, 753.8738250732422, 684.9443912506104, 668.6446666717529, 684.5111846923828, 704.2160034179688, 683.3908557891846, 687.9465579986572, 672.3005771636963, 677.706241607666, 702.0096778869629, 675.2736568450928, 692.8296089172363] 
 
 
-  ## 1 query
-
-    AVERAGE=215.717506408691
-
-    ![Alt text](photo/image2.png)
-
-  ## 2 query
-
-    AVERAGE=288.943600654602
-
-    ![Alt text](photo/image3.png)
-
-  ## 3 query
-
-    AVERAGE=635.384798049927
-
-    ![Alt text](photo/image4.png)
-
-  ## 4 query
-
-    AVERAGE=687.97470331192
-
-    ![Alt text](photo/image5.png)
-
+  ## 1 query <br>
+    AVERAGE=215.717506408691<br>
+    ![Alt text](photo/image2.png)<br>
+  ## 2 query <br>
+    AVERAGE=288.943600654602 <br>
+    ![Alt text](photo/image3.png) <br>
+  ## 3 query <br>
+    AVERAGE=635.384798049927 <br>
+    ![Alt text](photo/image4.png) <br>
+  ## 4 query <br>
+    AVERAGE=687.97470331192 <br>
+    ![Alt text](photo/image5.png) <br>
 
   ![Alt text](photo/image1.png)
 ---
