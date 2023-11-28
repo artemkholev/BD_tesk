@@ -1,30 +1,19 @@
-import psycopg2
-from psycopg2 import Error
+from timeFunction import getTime 
+from psycopg2_test import psycopg2Actions
 
-try:
-    # Подключение к существующей базе данных
-    connection = psycopg2.connect(user="lab_2",
-                                  # пароль, который указали при установке PostgreSQL
-                                  password="TV",
-                                  host="127.0.0.1",
-                                  port="5432",
-                                  database="postgres_db")
+numberIterations = 20
+result1 = []
+result2 = []
+result3 = []
+result4 = []
 
-    # Курсор для выполнения операций с базой данных
-    cursor = connection.cursor()
-    # Распечатать сведения о PostgreSQL
-    print("Информация о сервере PostgreSQL")
-    print(connection.get_dsn_parameters(), "\n")
-    # Выполнение SQL-запроса
-    cursor.execute("SELECT version();")
-    # Получить результат
-    record = cursor.fetchone()
-    print("Вы подключены к - ", record, "\n")
+for i in range(0, numberIterations):
+  result1.append(getTime(psycopg2Actions, 1))
+  result2.append(getTime(psycopg2Actions, 2))
+  result3.append(getTime(psycopg2Actions, 3))
+  result4.append(getTime(psycopg2Actions, 4))
 
-except (Exception, Error) as error:
-    print("Ошибка при работе с PostgreSQL", error)
-finally:
-    if connection:
-        cursor.close()
-        connection.close()
-        print("Соединение с PostgreSQL закрыто")
+print('1 = ', result1, '\n')
+print('2 = ', result2, '\n')
+print('3 = ', result3, '\n')
+print('4 = ', result4, '\n')

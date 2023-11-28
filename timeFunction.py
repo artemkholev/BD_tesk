@@ -1,9 +1,7 @@
 import time
 
-def getTime(createPsycopg2): 
+def getTime(psycopg2Actions, query): 
   start = time.time()
-  createPsycopg2()
-  
-
+  psycopg2Actions(query)
   end = time.time()
-  print("The time of execution of above program is :", (end-start) * 10**3, "ms")
+  return ((end-start) * 10**3)
