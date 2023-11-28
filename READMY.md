@@ -10,6 +10,7 @@ Write a benchmark to measure the speed of execution of all four queries from the
 20 iterations were performed in each experiment.
 
 1) psycopg2 (Postgress)
+
   Working time 4 request 
   1 =  [243.6385154724121, 275.46072006225586, 223.04987907409668, 186.8724822998047, 194.36001777648926, 307.6286315917969, 264.30487632751465, 195.89972496032715, 212.21041679382324, 201.44891738891602, 187.07275390625, 195.82700729370117, 215.2688503265381, 187.94846534729004, 193.74942779541016, 184.2207908630371, 200.81067085266113, 202.9101848602295, 230.85570335388184, 210.81209182739258] 
 
@@ -21,16 +22,28 @@ Write a benchmark to measure the speed of execution of all four queries from the
 
 
   1 query
+
     AVERAGE=215.717506408691
+
     ![Alt text](photo/image2.png)
+
   2 query
+
     AVERAGE=288.943600654602
+
     ![Alt text](photo/image3.png)
+
   3 query
+
     AVERAGE=635.384798049927
+
     ![Alt text](photo/image4.png)
+
   4 query
+
     AVERAGE=687.97470331192
+
     ![Alt text](photo/image5.png)
+
 
   ![Alt text](photo/image1.png)
