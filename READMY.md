@@ -1,15 +1,15 @@
-For start application need:
-  For psycopg2
-  python3 -m venv venv;
-  source venv/bin/activate;
-  pip install psycopg2-binary;
+For start application need:<br>
+  For psycopg2<br>
+  python3 -m venv venv;<br>
+  source venv/bin/activate;<br>
+  pip install psycopg2-binary:<br>
 
 
 Write a benchmark to measure the speed of execution of all four queries from the benchmark 4 queries.
 
 20 iterations were performed in each experiment.
 
-1) psycopg2 (Postgress)
+# psycopg2 (Postgress)
 
   Working time 4 request 
   1 =  [243.6385154724121, 275.46072006225586, 223.04987907409668, 186.8724822998047, 194.36001777648926, 307.6286315917969, 264.30487632751465, 195.89972496032715, 212.21041679382324, 201.44891738891602, 187.07275390625, 195.82700729370117, 215.2688503265381, 187.94846534729004, 193.74942779541016, 184.2207908630371, 200.81067085266113, 202.9101848602295, 230.85570335388184, 210.81209182739258] 
@@ -21,25 +21,25 @@ Write a benchmark to measure the speed of execution of all four queries from the
   4 =  [687.633752822876, 686.4669322967529, 676.0632991790771, 683.6743354797363, 686.6278648376465, 687.2365474700928, 683.1533908843994, 680.9906959533691, 753.8738250732422, 684.9443912506104, 668.6446666717529, 684.5111846923828, 704.2160034179688, 683.3908557891846, 687.9465579986572, 672.3005771636963, 677.706241607666, 702.0096778869629, 675.2736568450928, 692.8296089172363] 
 
 
-  1 query
+  ## 1 query
 
     AVERAGE=215.717506408691
 
     ![Alt text](photo/image2.png)
 
-  2 query
+  ## 2 query
 
     AVERAGE=288.943600654602
 
     ![Alt text](photo/image3.png)
 
-  3 query
+  ## 3 query
 
     AVERAGE=635.384798049927
 
     ![Alt text](photo/image4.png)
 
-  4 query
+  ## 4 query
 
     AVERAGE=687.97470331192
 
@@ -47,3 +47,4 @@ Write a benchmark to measure the speed of execution of all four queries from the
 
 
   ![Alt text](photo/image1.png)
+---
