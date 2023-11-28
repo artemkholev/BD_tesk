@@ -3,8 +3,7 @@ For start application need:<br>
   python3 -m venv venv;<br>
   source venv/bin/activate;<br>
   pip install psycopg2-binary:<br>
-
-
+---
 Write a benchmark to measure the speed of execution of all four queries from the benchmark 4 queries.
 
 20 iterations were performed in each experiment.
@@ -22,17 +21,17 @@ Write a benchmark to measure the speed of execution of all four queries from the
 
 
   ## 1 query <br>
-    AVERAGE=215.717506408691<br>
-    ![Alt text](photo/image2.png)<br>
+  AVERAGE=215.717506408691<br>
+  ![Alt text](photo/image2.png)<br>
   ## 2 query <br>
-    AVERAGE=288.943600654602 <br>
-    ![Alt text](photo/image3.png) <br>
+  AVERAGE=288.943600654602 <br>
+  ![Alt text](photo/image3.png) <br>
   ## 3 query <br>
-    AVERAGE=635.384798049927 <br>
-    ![Alt text](photo/image4.png) <br>
+  AVERAGE=635.384798049927 <br>
+  ![Alt text](photo/image4.png) <br>
   ## 4 query <br>
-    AVERAGE=687.97470331192 <br>
-    ![Alt text](photo/image5.png) <br>
+  AVERAGE=687.97470331192 <br>
+  ![Alt text](photo/image5.png) <br>
 
   ![Alt text](photo/image1.png)
 ---
