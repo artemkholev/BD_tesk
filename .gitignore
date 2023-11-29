@@ -162,3 +162,4 @@ cython_debug/
 venv/
 
 SQLite_test/sqlite_python.db
+DuckDB_test/DuckDB.duckdb

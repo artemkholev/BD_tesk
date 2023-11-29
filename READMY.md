@@ -96,3 +96,5 @@ Write a benchmark to measure the speed of execution of all four queries from the
 
   ![Alt text](photo/image6.png)<br>
 ---
+# DuckDB <br>
+### Working time 4 request<br>
