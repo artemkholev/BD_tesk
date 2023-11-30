@@ -5,7 +5,6 @@ def DuckDBActions(query):
     conn = duckdb.connect('DuckDB_test/DuckDB.duckdb')
     cursor = conn.cursor()
 
-    # cursor.execute("CREATE TABLE taxi AS SELECT * FROM read_csv_auto('/home/artem-kholev/Desktop/database2/yellow_tiny.csv');")
     if (query == 1):
         cursor.sql('SELECT vendorid, count(*) FROM taxi GROUP BY 1;').show()
     elif (query == 2):
