@@ -37,8 +37,9 @@
   insert_records = "INSERT INTO taxi_yellow (VendorID, tpep_pickup_datetime, tpep_dropoff_datetime, passenger_count, trip_distance, RatecodeID, store_and_fwd_flag, PULocationID, DOLocationID, payment_type, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge, total_amount, congestion_surcharge, airport_fee) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
   cursor.executemany(insert_records, contents)
 ```
+<br>
 
-## For SQLite
+## For DuckDB
   pip install duckdb
 
   for create bd 
@@ -48,6 +49,13 @@
   cursor = conn.cursor()
   cursor.execute("CREATE TABLE taxi AS SELECT * FROM read_csv_auto('path to csv');")
 ```
+<br>
+
+## For pandas
+  pip insall pandas
+
+  Also need create local bd and use connection - SQLite or SQLAlchemy.<br>
+---
 
 Write a benchmark to measure the speed of execution of all four queries from the benchmark 4 queries.
 
