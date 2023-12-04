@@ -163,3 +163,4 @@ venv/
 
 SQLite_test/sqlite_python.db
 DuckDB_test/DuckDB.duckdb
+Pandas_test/pandas_python.db
