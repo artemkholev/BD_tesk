@@ -1,8 +1,9 @@
 # Для старта:<br>
   ## Для psycopg2<br>
   python3 -m venv venv;<br>
-  source venv/bin/activate;<br>
-  pip install psycopg2-binary:<br>
+  source venv/bin/activate;
+
+  pip install psycopg2-binary:
 ---
   ## Для SQLite
   ```python
@@ -50,107 +51,121 @@
 ```
 <br>
 
-## For pandas
+## Для pandas
   pip insall pandas<br>
-  Also need create local bd and use connection - SQLite or SQLAlchemy.<br>
+  Also need create local bd and use connection - SQLite or SQLAlchemy.
+
 ---
 
-## For sqlalchemy
-  pip install sqlalchemy<br>
-  Подключить к BD я выбрал postgesql
+## Для sqlalchemy
+  pip install sqlalchemy
+
+  Подключить к BD, я выбрал postgesql
   
 Write a benchmark to measure the speed of execution of all four queries from the benchmark 4 queries.
 
 В данной лабараторной было выполнено по 20 запросов для каждой библиотеки.
 
----
 # psycopg2 (Postgress)
-  ## 1 query <br>
+  ## 1 query
   AVERAGE=215.717506408691<br>
-  ![Alt text](photo/image2.png)<br>
-  ## 2 query <br>
+  <img src="photo/image2.png" width=300><br>
+
+  ## 2 query
   AVERAGE=288.943600654602 <br>
-  ![Alt text](photo/image3.png)<br>
-  ## 3 query <br>
+  <img src="photo/image3.png" width=300><br>
+
+  ## 3 query
   AVERAGE=635.384798049927 <br>
-  ![Alt text](photo/image4.png)<br>
-  ## 4 query <br>
+  <img src="photo/image4.png" width=300><br>
+
+  ## 4 query
   AVERAGE=687.97470331192 <br>
-  ![Alt text](photo/image5.png)<br>
+  <img src="photo/image5.png" width=300><br>
 
   ![Alt text](photo/image1.png)<br>
 ---
-# SQLite <br>
-  ## 1 query <br>
+# SQLite 
+  ## 1 query
   AVERAGE=670.306479930878<br>
-  ![Alt text](photo/image7.png)<br>
-  ## 2 query <br>
+  <img src="photo/image7.png" width=300><br>
+
+  ## 2 query
   AVERAGE=1125.99264383316<br>
-  ![Alt text](photo/image8.png)<br>
-  ## 3 query <br>
+  <img src="photo/image8.png" width=300><br>
+
+  ## 3 query
   AVERAGE=1981.75443410873<br>
-  ![Alt text](photo/image9.png)<br>
-  ## 4 query <br>
+  <img src="photo/image9.png" width=300><br>
+
+  ## 4 query
   AVERAGE=2989.81219530106<br>
-  ![Alt text](photo/image10.png)<br>
+  <img src="photo/image10.png" width=300><br>
 
   ![Alt text](photo/image6.png)<br>
 ---
-# DuckDB <br>
-  ## 1 query <br>
+# DuckDB
+  ## 1 query
   AVERAGE=29.1940331459045<br>
-  ![Alt text](photo/image11.png)<br>
+  <img src="photo/image11.png" width=300><br>
 
-  ## 2 query <br>
+  ## 2 query
   AVERAGE=40.7169580459595<br>
-  ![Alt text](photo/image12.png)<br>
+  <img src="photo/image12.png" width=300><br>
 
-  ## 3 query <br>
+  ## 3 query
   AVERAGE=106.645703315735<br>
-  ![Alt text](photo/image13.png)<br>
+  <img src="photo/image13.png" width=300><br>
 
-  ## 4 query <br>
+  ## 4 query
   AVERAGE=141.297197341919<br>
-  ![Alt text](photo/image14.png)<br>
+  <img src="photo/image14.png" width=300><br>
 
   ![Alt text](photo/image15.png)
 ---
-# Pandas <br>
- ## 1 query <br>
+# Pandas
+ ## 1 query 
   AVERAGE=608.37984085083<br>
-  ![Alt text](photo/image16.png)<br>
+  <img src="photo/image16.png" width=300><br>
 
- ## 2 query <br>
+ ## 2 query
   AVERAGE=982.764136791229<br>
-  ![Alt text](photo/image17.png)<br>
+  <img src="photo/image17.png" width=300><br>
 
- ## 3 query <br>
+ ## 3 query
   AVERAGE=1669.82358694077<br>
-  ![Alt text](photo/image18.png)<br>
+  <img src="photo/image18.png" width=300><br>
 
- ## 4 query <br>
+ ## 4 query
   AVERAGE=2431.83189630508<br>
-  ![Alt text](photo/image19.png)<br>
+  <img src="photo/image19.png" width=300><br>
 
   ![Alt text](photo/image20.png)<br>
 ---
 
-# SQLAlchemy <br>
- ## 1 query <br>
+# SQLAlchemy
+ ## 1 query
   AVERAGE=281.095612049103<br>
-  ![Alt text](photo/image21.png)<br>
- ## 2 query <br>
+  <img src="photo/image21.png" width=300><br>
+
+ ## 2 query
   AVERAGE=339.094614982605<br>
-  ![Alt text](photo/image22.png)<br>
- ## 3 query <br>
+  <img src="photo/image22.png" width=300><br>
+
+ ## 3 query
   AVERAGE=700.636959075928<br>
-  ![Alt text](photo/image23.png)<br>
- ## 4 query <br>
+  <img src="photo/image23.png" width=300><br>
+
+ ## 4 query
   AVERAGE=770.026981830597<br>
-  ![Alt text](photo/image24.png)<br>
+  <img src="photo/image24.png" width=300><br>
 
 ![Alt text](photo/image25.png)<br>
 
+# Выводы
+
+![Alt text](photo/image26.png)
+Для проведения лабараторной работы было выбрано 5 библиотек(psycopg2, SQLite, DuckDB, Pandas, SQLAlchemy), для работы с BD. В ходе выполнения работы, были собраны данные - время работы. Всего для каждой библиотеки было задействовано 4 запроса. Каждый запрос повторялся 20 раз, исходя из полученных данных, были сделаный графики и найдено среднее время. Подводя итог проделанной работы, мною были получены данные о том, что самой быстрой стал DuckDB по всем запросам. Самой долго работующей SQLite. psycopg2 и SQLAlchemy в среднем были одинаковы. По удобству использывания, могу сказать, что psycopg2, DuckDB больше понравились. 
 
 
 # Приложение с временем работы каждой библотеки(20 запросов). 
