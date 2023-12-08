@@ -1,7 +1,7 @@
 import time
 
-def getTime(psycopg2Actions, query): 
+def getTime(actions, query): 
   start = time.time()
-  psycopg2Actions(query)
+  actions(query)
   end = time.time()
   return ((end-start) * 10**3)

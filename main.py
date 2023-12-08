@@ -3,6 +3,7 @@ from psycopg2_test import psycopg2Actions
 from SQLite_test.SQLite_test import SQLiteActions
 from DuckDB_test.DuckDB_test import DuckDBActions
 from Pandas_test.Pandas_test import PandasActions
+from SQLAlchemy_test.SQLAlchemy_test import SQLAlchemyActions
 
 numberIterations = 20
 result1 = []
@@ -26,10 +27,15 @@ for i in range(0, numberIterations):
   # result3.append(getTime(DuckDBActions, 3))
   # result4.append(getTime(DuckDBActions, 4))
 
-  result1.append(getTime(PandasActions, 1))
-  result2.append(getTime(PandasActions, 2))
-  result3.append(getTime(PandasActions, 3))
-  result4.append(getTime(PandasActions, 4))
+  # result1.append(getTime(PandasActions, 1))
+  # result2.append(getTime(PandasActions, 2))
+  # result3.append(getTime(PandasActions, 3))
+  # result4.append(getTime(PandasActions, 4))
+
+  result1.append(getTime(SQLAlchemyActions, 1))
+  result2.append(getTime(SQLAlchemyActions, 2))
+  result3.append(getTime(SQLAlchemyActions, 3))
+  result4.append(getTime(SQLAlchemyActions, 4))
 
 print('1 = ', result1, '\n')
 print('2 = ', result2, '\n')
