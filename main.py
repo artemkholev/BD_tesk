@@ -1,5 +1,5 @@
 from timeFunction import getTime 
-from psycopg2_test import psycopg2Actions
+from psycopg2_test.psycopg2_test import psycopg2Actions
 from SQLite_test.SQLite_test import SQLiteActions
 from DuckDB_test.DuckDB_test import DuckDBActions
 from Pandas_test.Pandas_test import PandasActions
